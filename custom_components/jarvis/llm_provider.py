@@ -586,7 +586,7 @@ def _warn_ollama_toolparse_once(model: str) -> None:
 # Ollama's 2048 default (JARVIS's system prompt + knowledge + history need the
 # room, and a too-small window silently truncates); and allow a generous
 # timeout since the first token can lag while a cold model loads.
-OLLAMA_KEEP_ALIVE = "30m"
+OLLAMA_KEEP_ALIVE = "-1"
 OLLAMA_NUM_CTX = 8192
 OLLAMA_TIMEOUT = 120.0  # seconds
 
